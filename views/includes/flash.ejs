@@ -1,0 +1,23 @@
+<% if(success && success.length){ %>
+    <!-- condition applied here is getting success & bcoz success is an array its length should be graeter than 0 -->
+    <div class="alert alert-success alert-dismissable fade show col-6 offset-3" role="alert">
+        <%= success %>
+        <button
+        type="button",
+        class="btn-close",
+        data-bs-dismiss="alert",
+        aria-label="Close"></button>
+    </div>
+<%}%>
+
+<% if(error && error.length){ %>
+    <!-- condition applied here is getting success & bcoz success is an array its length should be graeter than 0 -->
+    <div class="alert alert-danger alert-dismissable fade show col-6 offset-3" role="alert">
+        <%= error %>
+        <button
+        type="button",
+        class="btn-close",
+        data-bs-dismiss="alert",
+        aria-label="Close"></button>
+    </div>
+<%}%>
